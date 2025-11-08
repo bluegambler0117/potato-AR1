@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的馬鈴薯 AR</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #cce7ff; /* 淺藍背景 */
+    }
+    model-viewer {
+      width: 100%;
+      height: 100vh; /* 佔滿整個視窗 */
+    }
+    /* 這裡你可以加入 #logo 的 CSS 讓它出現在左上角 */
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="你的檔案.glb" 
+    alt="可愛馬鈴薯"
+    ar
+    auto-rotate
+    camera-controls
+    shadow-intensity="1">
+    
+    <img slot="poster" src="potato_logo.png" style="position: absolute; top: 10px; left: 10px; width: 60px;">
+    
+  </model-viewer>
+</body>
+</html>
