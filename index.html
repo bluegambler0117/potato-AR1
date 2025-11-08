@@ -10,11 +10,14 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #cce7ff; /* 淺藍背景，保持簡潔一致 */
+      /* 網頁背景設為透明 */
+      background-color: transparent;
     }
     model-viewer {
       width: 100%;
-      height: 100vh; /* 佔滿整個視窗 */
+      height: 100vh; 
+      /* 讓模型檢視器背景透明（注意：在某些瀏覽器中，模型本身仍然需要背景來顯示光影）*/
+      --poster-background-color: transparent;
     }
   </style>
 </head>
